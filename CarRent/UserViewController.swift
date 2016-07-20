@@ -51,12 +51,18 @@ class UserViewController: UIViewController, UITableViewDelegate, UITableViewData
 		tableView.addSubview(headBlurView)
 
 		//用户头像
+		let userImageSize = -tableView.contentOffset.y - navigationController!.navigationBar.frame.height - UIApplication.sharedApplication().statusBarFrame.height
+
+		print("nav: \(navigationController!.navigationBar.frame.height) status: \(UIApplication.sharedApplication().statusBarFrame.height) imageSize: \(userImageSize) offset: \(tableView.contentOffset.y)")
+
 		userImageView = UIImageView(frame: CGRect(
 			x: 20,
-			y: -5,
-			width: -tableView.contentOffset.y - navigationController!.navigationBar.frame.height - UIApplication.sharedApplication().statusBarFrame.height,
-			height: -tableView.contentOffset.y - navigationController!.navigationBar.frame.height - UIApplication.sharedApplication().statusBarFrame.height))
+			y: -5 - userImageSize,
+			width: userImageSize,
+			height: userImageSize))
 		SetImageView(userImageView, image: UIImage(named: "头像")!, circle: true)
+
+		tableView.addSubview(userImageView)
 
 		//用户名称
 //		let userName: NSString = "欢迎您"
