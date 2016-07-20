@@ -9,6 +9,9 @@
 #ifndef Header_h
 #define Header_h
 
-#include "MJRefresh.h"
+#import "MJRefresh.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+#import <MAMapKit/MAMapKit.h>
 
 #endif /* Header_h */

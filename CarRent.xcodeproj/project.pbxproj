@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990046E61D3B197E00AAB125 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996BBA751D2E50EC00EF712E /* Alamofire.framework */; };
+		990046E71D3B197E00AAB125 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 996BBA751D2E50EC00EF712E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		990046E81D3B197E00AAB125 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996BBA761D2E50EC00EF712E /* CryptoSwift.framework */; };
+		990046E91D3B197E00AAB125 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 996BBA761D2E50EC00EF712E /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		990046EA1D3B197E00AAB125 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996BBA771D2E50EC00EF712E /* SwiftyJSON.framework */; };
+		990046EB1D3B197E00AAB125 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 996BBA771D2E50EC00EF712E /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		990046EC1D3B197E00AAB125 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996BBA781D2E50EC00EF712E /* WebImage.framework */; };
+		990046ED1D3B197E00AAB125 /* WebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 996BBA781D2E50EC00EF712E /* WebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		990046F01D3B221500AAB125 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990046EF1D3B221500AAB125 /* User.swift */; };
 		993790641D3259ED006BF0AD /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 993790381D3259ED006BF0AD /* MJRefreshAutoFooter.m */; };
 		993790651D3259ED006BF0AD /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937903A1D3259ED006BF0AD /* MJRefreshBackFooter.m */; };
 		993790661D3259ED006BF0AD /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9937903C1D3259ED006BF0AD /* MJRefreshComponent.m */; };
@@ -76,7 +85,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		990046EE1D3B197E00AAB125 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				990046E71D3B197E00AAB125 /* Alamofire.framework in Embed Frameworks */,
+				990046E91D3B197E00AAB125 /* CryptoSwift.framework in Embed Frameworks */,
+				990046EB1D3B197E00AAB125 /* SwiftyJSON.framework in Embed Frameworks */,
+				990046ED1D3B197E00AAB125 /* WebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		990046EF1D3B221500AAB125 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		993790371D3259ED006BF0AD /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		993790381D3259ED006BF0AD /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		993790391D3259ED006BF0AD /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -161,11 +188,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990046E81D3B197E00AAB125 /* CryptoSwift.framework in Frameworks */,
 				996BBA981D2E530300EF712E /* Security.framework in Frameworks */,
 				996BBA961D2E52F900EF712E /* libc++.tbd in Frameworks */,
 				996BBA941D2E52E700EF712E /* libstdc++.6.0.9.tbd in Frameworks */,
+				990046E61D3B197E00AAB125 /* Alamofire.framework in Frameworks */,
 				996BBA921D2E52D400EF712E /* libz.tbd in Frameworks */,
+				990046EA1D3B197E00AAB125 /* SwiftyJSON.framework in Frameworks */,
 				996BBA901D2E52C500EF712E /* SystemConfiguration.framework in Frameworks */,
+				990046EC1D3B197E00AAB125 /* WebImage.framework in Frameworks */,
 				996BBA8E1D2E526B00EF712E /* CoreTelephony.framework in Frameworks */,
 				996BBA8C1D2E526000EF712E /* CoreLocation.framework in Frameworks */,
 				996BBA8A1D2E525400EF712E /* OpenGLES.framework in Frameworks */,
@@ -318,7 +349,6 @@
 		996BBA331D2E4E0700EF712E /* CarRent */ = {
 			isa = PBXGroup;
 			children = (
-				996BBA701D2E4F2E00EF712E /* DataModel */,
 				996BBA6D1D2E4EFD00EF712E /* Service */,
 				996BBA641D2E4E7200EF712E /* Framework */,
 				993790781D325A13006BF0AD /* Header.h */,
@@ -327,6 +357,7 @@
 				996BBA3B1D2E4E0700EF712E /* Assets.xcassets */,
 				996BBA3D1D2E4E0700EF712E /* LaunchScreen.storyboard */,
 				996BBA401D2E4E0700EF712E /* Info.plist */,
+				996BBA701D2E4F2E00EF712E /* DataModel */,
 				996BBA711D2E4F3B00EF712E /* Map */,
 				996BBA721D2E4F4D00EF712E /* User */,
 				996BBA9B1D2E6C4A00EF712E /* Order */,
@@ -377,6 +408,7 @@
 		996BBA701D2E4F2E00EF712E /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				990046EF1D3B221500AAB125 /* User.swift */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -445,6 +477,7 @@
 				996BBA2D1D2E4E0700EF712E /* Sources */,
 				996BBA2E1D2E4E0700EF712E /* Frameworks */,
 				996BBA2F1D2E4E0700EF712E /* Resources */,
+				990046EE1D3B197E00AAB125 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -571,6 +604,7 @@
 				993790701D3259ED006BF0AD /* MJRefreshNormalHeader.m in Sources */,
 				993790741D3259ED006BF0AD /* NSBundle+MJRefresh.m in Sources */,
 				993790711D3259ED006BF0AD /* MJRefreshStateHeader.m in Sources */,
+				990046F01D3B221500AAB125 /* User.swift in Sources */,
 				9937906F1D3259ED006BF0AD /* MJRefreshGifHeader.m in Sources */,
 				9937906D1D3259ED006BF0AD /* MJRefreshBackNormalFooter.m in Sources */,
 				993790731D3259ED006BF0AD /* MJRefreshConst.m in Sources */,
